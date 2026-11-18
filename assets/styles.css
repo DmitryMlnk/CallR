@@ -269,7 +269,7 @@ details[open] .plus::after{transform:rotate(0)}
 .faq-item .plus{flex-basis:27px;width:27px;height:27px;border:1px solid var(--line);border-radius:50%}
 .faq-item .plus::before,.faq-item .plus::after{left:7px;top:12px}
 .faq-item>p{font-size:14px;line-height:1.75;color:var(--muted);padding:0 55px 25px 0}
-/* Contact / QR and real Telegram and phone actions. */
+/* Contact and Telegram QR. */
 .contact-card{border-radius:var(--radius);background:#1e1d22;color:#fff;padding:59px 62px;position:relative;overflow:hidden;isolation:isolate;display:grid;grid-template-columns:1fr 245px;gap:55px;align-items:center}
 .contact-glow{position:absolute;left:-30%;bottom:-220px;width:90%;height:450px;background:radial-gradient(ellipse,#bc74895b,#80608d30 45%,transparent 70%);filter:blur(50px);z-index:-1}
 .contact-main>.eyebrow{color:#cac3d0;margin-bottom:30px}
@@ -281,9 +281,6 @@ details[open] .plus::after{transform:rotate(0)}
 .contact-direct>span{color:#726b7c}
 .contact-direct a{padding-block:6px;transition:color .2s}
 .contact-direct a:hover{color:#fff}
-.copy-phone{width:32px;height:32px;background:transparent;display:grid;place-items:center;margin-left:-9px;color:#b6abbf;border-radius:50%}
-.copy-phone:hover{background:#ffffff10}
-.copy-phone svg{width:16px;height:16px;stroke:currentColor;stroke-width:1.25}
 .contact-qr{display:block;transform:rotate(4deg);background:#ffffff0a;border:1px solid #ffffff1d;padding:16px 16px 22px;border-radius:24px;position:relative;transition:transform .35s var(--ease);margin-top:30px}
 .contact-qr:hover{transform:rotate(0) translateY(-4px)}
 .qr-image{background:white;border-radius:12px;display:block;padding:9px}
@@ -361,11 +358,10 @@ details[open] .plus::after{transform:rotate(0)}
  html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.mark-float{will-change:auto}.motion-ready .reveal:not(.is-visible){opacity:1;transform:none}
 }
 @media print{
- .site-header,.hero-visual,.scroll-cue,.scenario-tabs,.scenario-navigation,.copy-phone,.footer-top>.text-link,.toast{display:none!important}.wrap{width:100%;max-width:none}.section{padding-top:35px;break-inside:avoid}.hero{padding-top:0}.hero-composition{display:block;min-height:0}.hero h1{font-size:55px}.hero h1>span{display:inline;padding:0!important;margin-right:12px}.hero-desc{margin-top:20px}.hero-buttons{display:none}.hero-bottom{margin-top:20px}.motion-ready .reveal{opacity:1!important;transform:none!important}.scenario-panel{display:block!important;break-inside:avoid}.contact-card{background:#f0eef3;color:#19191c}.contact-main h2>span,.contact-main>.eyebrow,.contact-desc,.contact-direct{color:#19191c}.contact-main h2{font-size:45px}.contact-glow{display:none}body{font-size:11px}
+ .site-header,.hero-visual,.scroll-cue,.scenario-tabs,.scenario-navigation,.footer-top>.text-link,.toast{display:none!important}.wrap{width:100%;max-width:none}.section{padding-top:35px;break-inside:avoid}.hero{padding-top:0}.hero-composition{display:block;min-height:0}.hero h1{font-size:55px}.hero h1>span{display:inline;padding:0!important;margin-right:12px}.hero-desc{margin-top:20px}.hero-buttons{display:none}.hero-bottom{margin-top:20px}.motion-ready .reveal{opacity:1!important;transform:none!important}.scenario-panel{display:block!important;break-inside:avoid}.contact-card{background:#f0eef3;color:#19191c}.contact-main h2>span,.contact-main>.eyebrow,.contact-desc,.contact-direct{color:#19191c}.contact-main h2{font-size:45px}.contact-glow{display:none}body{font-size:11px}
 }
 /* Pause decorative movement when it cannot be seen. */
 .hero-visual.is-paused .mark-float,.hero-visual.is-paused .hero-wave i,.tab-inactive .mark-float,.tab-inactive .hero-wave i{animation-play-state:paused}
-.copy-phone{display:none}.js .copy-phone{display:grid}
 @media(max-width:760px){.menu-toggle{display:none}.js .menu-toggle{display:block}}
 /* Keep decorative orbits inside the layout at tablet and narrow phone widths. */
 @media(min-width:761px){.hero-composition{grid-template-columns:minmax(0,1.08fr) minmax(0,1fr)}.hero-copy{min-width:0}.hero-visual{width:100%}}

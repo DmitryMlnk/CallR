@@ -7,28 +7,6 @@
   const root = document.documentElement;
   root.classList.add('js');
 
-  // Real contact actions. Copy is optional; the phone link always works.
-  let toastTimer;
-  const toast = document.querySelector('.toast');
-  function announce(message) {
-    if (!toast) return;
-    clearTimeout(toastTimer);
-    toast.textContent = message;
-    toast.classList.add('is-visible');
-    toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 3600);
-  }
-  const copyPhone = document.querySelector('.copy-phone');
-  copyPhone?.addEventListener('click', async () => {
-    try {
-      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
-      await navigator.clipboard.writeText('+375 44 738 7513');
-      announce(copyPhone.dataset.success);
-    } catch {
-      // Explicit fallback instead of claiming that copying succeeded.
-      announce(copyPhone.dataset.failure);
-    }
-  });
-
   // Accessible mobile menu: escape, focus containment and breakpoint reset.
   const menuButton = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.mobile-menu');
